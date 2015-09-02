@@ -85,6 +85,7 @@ def pull_all_apps(bench='.'):
 	frappe_dir = os.path.join(apps_dir, 'frappe')
 
 	for app in apps:
+	   	#if app!='church_ministry':
 		app_dir = os.path.join(apps_dir, app)
 		if os.path.exists(os.path.join(app_dir, '.git')):
 			logger.info('pulling {0}'.format(app))
